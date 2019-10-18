@@ -1,0 +1,18 @@
+[submodule "xpb_deploy"]
+	path = xpb_deploy
+	url = https://github.com/abersailbot/xpb_deploy
+[submodule "xpb-boatd-driver"]
+	path = xpb-boatd-driver
+	url = https://github.com/abersailbot/xpb-boatd-driver
+[submodule "xpb-behaviour"]
+	path = xpb-behaviour
+	url = https://github.com/abersailbot/xpb-behaviour
+[submodule "xpb-arduino"]
+	path = xpb-arduino
+	url = https://github.com/abersailbot/xpb-arduino
+[submodule "boatd"]
+	path = boatd
+	url = https://github.com/abersailbot/boatd
+[submodule "python-boatd"]
+	path = python-boatd
+	url = https://github.com/boatd/python-boatd
