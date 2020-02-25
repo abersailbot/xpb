@@ -30,8 +30,8 @@ $ ./deploy.sh
 
 '''Your boat will not work until you do these things:'''
 
- 1. symlink /dev/arduino to your Arduino device. Each Arduino has its own unique ID and will appear in /dev/serial/by-id. Run sudo ls -s /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85430363039351A0A032-if00 /dev/arduino (replacing usb-Arduino__www.arduino.cc__0043_85430363039351A0A032-if00 with the appropriate ID)
- 2. Install the SPI to UART driver for talking to the GPS. This wasn't ready when wrote this script as we didn't have the hardware to test it with.
+ 1. symlink /dev/arduino to your Arduino device. Each Arduino has its own unique ID and will appear in /dev/serial/by-id. Run sudo ls -s /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85430363039351A0A032-if00 /dev/arduino (replacing usb-Arduino__www.arduino.cc__0043_85430363039351A0A032-if00 with the appropriate ID). Don't do this if you don't use an Arudino.
+ 2. Install the SPI to UART driver for talking to the GPS. This wasn't ready when wrote this script as we didn't have the hardware to test it with. OR Install a standard serial GPS and connect to the Raspberry Pi's serial port. Don't do step3 if you do this.
  3. Change the GPSD device, edit /etc/default/gpsd and change the line DEVICES="/dev/ttyAMA0" to match the GPS device.
 
 Things you might want to do:
